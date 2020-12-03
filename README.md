@@ -4,7 +4,7 @@ Automation tool in Python to correlate cleartext passwords from a Hashcat pot fi
 
 
 ```
-usage: washcat.py [-h] [-o OUTPUT] jobfile potfile
+usage: washcat.py [-h] [-o OUTPUT] [--ntlmv2] jobfile potfile
 
 positional arguments:
   jobfile               Original Hashcat™ job file containing account names and hashes
@@ -15,6 +15,7 @@ optional arguments:
   -o OUTPUT, --output OUTPUT
                         Name of the output file which should contain the correlated names
                         and cleartext passwords (Default: stdout)
+  --ntlmv2              Switch: Set job file hash type as NTLMv2 (Default: NTLM)
 ```
 
 # Features
